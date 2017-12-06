@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9397B530F70193EB97596785 /* libPods-RILI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B01DD4DDCC9572EE66A50BB2 /* libPods-RILI.a */; };
+		E321CF2C1F94DE53008961F5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E321CF2B1F94DE53008961F5 /* AppDelegate.m */; };
+		E321CF2F1F94DE53008961F5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E321CF2E1F94DE53008961F5 /* ViewController.m */; };
+		E321CF321F94DE53008961F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E321CF301F94DE53008961F5 /* Main.storyboard */; };
+		E321CF341F94DE53008961F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E321CF331F94DE53008961F5 /* Assets.xcassets */; };
+		E321CF371F94DE53008961F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E321CF351F94DE53008961F5 /* LaunchScreen.storyboard */; };
+		E321CF3A1F94DE53008961F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E321CF391F94DE53008961F5 /* main.m */; };
+		E321CF441F94DE53008961F5 /* RILITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E321CF431F94DE53008961F5 /* RILITests.m */; };
+		E321CF4F1F94DE53008961F5 /* RILIUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E321CF4E1F94DE53008961F5 /* RILIUITests.m */; };
+		E3EA5B9E1F94F27E00A52C1C /* RangePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EA5B9C1F94F27E00A52C1C /* RangePickerViewController.m */; };
+		E3EA5BC21F94F64600A52C1C /* RangePickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3EA5B9B1F94F27E00A52C1C /* RangePickerCell.m */; };
+		E3EA5BC51F94F6BA00A52C1C /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EA5BC41F94F6BA00A52C1C /* Contacts.framework */; };
+		E3EA5BC71F94F71A00A52C1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EA5BC61F94F71A00A52C1C /* SystemConfiguration.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E321CF401F94DE53008961F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E321CF1F1F94DE52008961F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E321CF261F94DE52008961F5;
+			remoteInfo = RILI;
+		};
+		E321CF4B1F94DE53008961F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E321CF1F1F94DE52008961F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E321CF261F94DE52008961F5;
+			remoteInfo = RILI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		16A53A9E9BFC30174A77E465 /* Pods-RILI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RILI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RILI/Pods-RILI.debug.xcconfig"; sourceTree = "<group>"; };
+		3F8E7BA591FEF546D25D2C9E /* Pods-RILI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RILI.release.xcconfig"; path = "Pods/Target Support Files/Pods-RILI/Pods-RILI.release.xcconfig"; sourceTree = "<group>"; };
+		B01DD4DDCC9572EE66A50BB2 /* libPods-RILI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RILI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E321CF271F94DE52008961F5 /* RILI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RILI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E321CF2A1F94DE53008961F5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E321CF2B1F94DE53008961F5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E321CF2D1F94DE53008961F5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E321CF2E1F94DE53008961F5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E321CF311F94DE53008961F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E321CF331F94DE53008961F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E321CF361F94DE53008961F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E321CF381F94DE53008961F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E321CF391F94DE53008961F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E321CF3F1F94DE53008961F5 /* RILITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RILITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E321CF431F94DE53008961F5 /* RILITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RILITests.m; sourceTree = "<group>"; };
+		E321CF451F94DE53008961F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E321CF4A1F94DE53008961F5 /* RILIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RILIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E321CF4E1F94DE53008961F5 /* RILIUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RILIUITests.m; sourceTree = "<group>"; };
+		E321CF501F94DE53008961F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3EA5B991F94F27D00A52C1C /* RangePickerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangePickerCell.h; sourceTree = "<group>"; };
+		E3EA5B9A1F94F27D00A52C1C /* RangePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RangePickerViewController.h; sourceTree = "<group>"; };
+		E3EA5B9B1F94F27E00A52C1C /* RangePickerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangePickerCell.m; sourceTree = "<group>"; };
+		E3EA5B9C1F94F27E00A52C1C /* RangePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RangePickerViewController.m; sourceTree = "<group>"; };
+		E3EA5BC41F94F6BA00A52C1C /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		E3EA5BC61F94F71A00A52C1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E321CF241F94DE52008961F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EA5BC71F94F71A00A52C1C /* SystemConfiguration.framework in Frameworks */,
+				E3EA5BC51F94F6BA00A52C1C /* Contacts.framework in Frameworks */,
+				9397B530F70193EB97596785 /* libPods-RILI.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321CF3C1F94DE53008961F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321CF471F94DE53008961F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4D1181CEA185FF2609EC3D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16A53A9E9BFC30174A77E465 /* Pods-RILI.debug.xcconfig */,
+				3F8E7BA591FEF546D25D2C9E /* Pods-RILI.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E321CF1E1F94DE52008961F5 = {
+			isa = PBXGroup;
+			children = (
+				E321CF291F94DE52008961F5 /* RILI */,
+				E321CF421F94DE53008961F5 /* RILITests */,
+				E321CF4D1F94DE53008961F5 /* RILIUITests */,
+				E321CF281F94DE52008961F5 /* Products */,
+				E3EA5BC31F94F6B900A52C1C /* Frameworks */,
+				A4D1181CEA185FF2609EC3D2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E321CF281F94DE52008961F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E321CF271F94DE52008961F5 /* RILI.app */,
+				E321CF3F1F94DE53008961F5 /* RILITests.xctest */,
+				E321CF4A1F94DE53008961F5 /* RILIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E321CF291F94DE52008961F5 /* RILI */ = {
+			isa = PBXGroup;
+			children = (
+				E321CF2A1F94DE53008961F5 /* AppDelegate.h */,
+				E321CF2B1F94DE53008961F5 /* AppDelegate.m */,
+				E321CF2D1F94DE53008961F5 /* ViewController.h */,
+				E321CF2E1F94DE53008961F5 /* ViewController.m */,
+				E3EA5B991F94F27D00A52C1C /* RangePickerCell.h */,
+				E3EA5B9B1F94F27E00A52C1C /* RangePickerCell.m */,
+				E3EA5B9A1F94F27D00A52C1C /* RangePickerViewController.h */,
+				E3EA5B9C1F94F27E00A52C1C /* RangePickerViewController.m */,
+				E321CF301F94DE53008961F5 /* Main.storyboard */,
+				E321CF331F94DE53008961F5 /* Assets.xcassets */,
+				E321CF351F94DE53008961F5 /* LaunchScreen.storyboard */,
+				E321CF381F94DE53008961F5 /* Info.plist */,
+				E321CF391F94DE53008961F5 /* main.m */,
+			);
+			path = RILI;
+			sourceTree = "<group>";
+		};
+		E321CF421F94DE53008961F5 /* RILITests */ = {
+			isa = PBXGroup;
+			children = (
+				E321CF431F94DE53008961F5 /* RILITests.m */,
+				E321CF451F94DE53008961F5 /* Info.plist */,
+			);
+			path = RILITests;
+			sourceTree = "<group>";
+		};
+		E321CF4D1F94DE53008961F5 /* RILIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E321CF4E1F94DE53008961F5 /* RILIUITests.m */,
+				E321CF501F94DE53008961F5 /* Info.plist */,
+			);
+			path = RILIUITests;
+			sourceTree = "<group>";
+		};
+		E3EA5BC31F94F6B900A52C1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3EA5BC61F94F71A00A52C1C /* SystemConfiguration.framework */,
+				E3EA5BC41F94F6BA00A52C1C /* Contacts.framework */,
+				B01DD4DDCC9572EE66A50BB2 /* libPods-RILI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E321CF261F94DE52008961F5 /* RILI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E321CF531F94DE53008961F5 /* Build configuration list for PBXNativeTarget "RILI" */;
+			buildPhases = (
+				32AA05684D87F3A9F0715774 /* [CP] Check Pods Manifest.lock */,
+				E321CF231F94DE52008961F5 /* Sources */,
+				E321CF241F94DE52008961F5 /* Frameworks */,
+				E321CF251F94DE52008961F5 /* Resources */,
+				E33A5D7125A9961C4E6A2C68 /* [CP] Embed Pods Frameworks */,
+				D36CBB4597FFFF7677F3510C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RILI;
+			productName = RILI;
+			productReference = E321CF271F94DE52008961F5 /* RILI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E321CF3E1F94DE53008961F5 /* RILITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E321CF561F94DE53008961F5 /* Build configuration list for PBXNativeTarget "RILITests" */;
+			buildPhases = (
+				E321CF3B1F94DE53008961F5 /* Sources */,
+				E321CF3C1F94DE53008961F5 /* Frameworks */,
+				E321CF3D1F94DE53008961F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E321CF411F94DE53008961F5 /* PBXTargetDependency */,
+			);
+			name = RILITests;
+			productName = RILITests;
+			productReference = E321CF3F1F94DE53008961F5 /* RILITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E321CF491F94DE53008961F5 /* RILIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E321CF591F94DE53008961F5 /* Build configuration list for PBXNativeTarget "RILIUITests" */;
+			buildPhases = (
+				E321CF461F94DE53008961F5 /* Sources */,
+				E321CF471F94DE53008961F5 /* Frameworks */,
+				E321CF481F94DE53008961F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E321CF4C1F94DE53008961F5 /* PBXTargetDependency */,
+			);
+			name = RILIUITests;
+			productName = RILIUITests;
+			productReference = E321CF4A1F94DE53008961F5 /* RILIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E321CF1F1F94DE52008961F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = YST;
+				TargetAttributes = {
+					E321CF261F94DE52008961F5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					E321CF3E1F94DE53008961F5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E321CF261F94DE52008961F5;
+					};
+					E321CF491F94DE53008961F5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E321CF261F94DE52008961F5;
+					};
+				};
+			};
+			buildConfigurationList = E321CF221F94DE52008961F5 /* Build configuration list for PBXProject "RILI" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E321CF1E1F94DE52008961F5;
+			productRefGroup = E321CF281F94DE52008961F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E321CF261F94DE52008961F5 /* RILI */,
+				E321CF3E1F94DE53008961F5 /* RILITests */,
+				E321CF491F94DE53008961F5 /* RILIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E321CF251F94DE52008961F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E321CF371F94DE53008961F5 /* LaunchScreen.storyboard in Resources */,
+				E321CF341F94DE53008961F5 /* Assets.xcassets in Resources */,
+				E321CF321F94DE53008961F5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321CF3D1F94DE53008961F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321CF481F94DE53008961F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32AA05684D87F3A9F0715774 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D36CBB4597FFFF7677F3510C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RILI/Pods-RILI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E33A5D7125A9961C4E6A2C68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RILI/Pods-RILI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E321CF231F94DE52008961F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EA5BC21F94F64600A52C1C /* RangePickerCell.m in Sources */,
+				E321CF2F1F94DE53008961F5 /* ViewController.m in Sources */,
+				E321CF3A1F94DE53008961F5 /* main.m in Sources */,
+				E3EA5B9E1F94F27E00A52C1C /* RangePickerViewController.m in Sources */,
+				E321CF2C1F94DE53008961F5 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321CF3B1F94DE53008961F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E321CF441F94DE53008961F5 /* RILITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E321CF461F94DE53008961F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E321CF4F1F94DE53008961F5 /* RILIUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E321CF411F94DE53008961F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E321CF261F94DE52008961F5 /* RILI */;
+			targetProxy = E321CF401F94DE53008961F5 /* PBXContainerItemProxy */;
+		};
+		E321CF4C1F94DE53008961F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E321CF261F94DE52008961F5 /* RILI */;
+			targetProxy = E321CF4B1F94DE53008961F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E321CF301F94DE53008961F5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E321CF311F94DE53008961F5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E321CF351F94DE53008961F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E321CF361F94DE53008961F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E321CF511F94DE53008961F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E321CF521F94DE53008961F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E321CF541F94DE53008961F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A53A9E9BFC30174A77E465 /* Pods-RILI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RILI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shantaoiOS.RILI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E321CF551F94DE53008961F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8E7BA591FEF546D25D2C9E /* Pods-RILI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RILI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shantaoiOS.RILI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E321CF571F94DE53008961F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CRL8ZT54A;
+				INFOPLIST_FILE = RILITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shantaoiOS.RILITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RILI.app/RILI";
+			};
+			name = Debug;
+		};
+		E321CF581F94DE53008961F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CRL8ZT54A;
+				INFOPLIST_FILE = RILITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shantaoiOS.RILITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RILI.app/RILI";
+			};
+			name = Release;
+		};
+		E321CF5A1F94DE53008961F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CRL8ZT54A;
+				INFOPLIST_FILE = RILIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shantaoiOS.RILIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RILI;
+			};
+			name = Debug;
+		};
+		E321CF5B1F94DE53008961F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5CRL8ZT54A;
+				INFOPLIST_FILE = RILIUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shantaoiOS.RILIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RILI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E321CF221F94DE52008961F5 /* Build configuration list for PBXProject "RILI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E321CF511F94DE53008961F5 /* Debug */,
+				E321CF521F94DE53008961F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E321CF531F94DE53008961F5 /* Build configuration list for PBXNativeTarget "RILI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E321CF541F94DE53008961F5 /* Debug */,
+				E321CF551F94DE53008961F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E321CF561F94DE53008961F5 /* Build configuration list for PBXNativeTarget "RILITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E321CF571F94DE53008961F5 /* Debug */,
+				E321CF581F94DE53008961F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E321CF591F94DE53008961F5 /* Build configuration list for PBXNativeTarget "RILIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E321CF5A1F94DE53008961F5 /* Debug */,
+				E321CF5B1F94DE53008961F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E321CF1F1F94DE52008961F5 /* Project object */;
+}

@@ -1,0 +1,12 @@
+
+
+platform :ios, '8.0'
+
+
+target "RILI" do
+
+
+pod "AFNetworking", "~> 3.0.4"
+pod "FSCalendar"
+
+end
