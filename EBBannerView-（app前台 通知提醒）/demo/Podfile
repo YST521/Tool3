@@ -1,0 +1,3 @@
+target 'demo’ do
+  pod 'EBBannerView', '1.0.5'
+end
