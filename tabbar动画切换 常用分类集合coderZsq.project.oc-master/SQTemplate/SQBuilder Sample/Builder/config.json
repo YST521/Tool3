@@ -1,0 +1,13 @@
+{
+	"super" : "",
+	"controller" : "HYSpecialSale",
+	"model" : {
+		"models" : "Array"
+	},
+	"viewModel" : [
+		"specialSale"
+	],
+	"presenter" : [
+		"pushToNextViewController"
+	]
+}

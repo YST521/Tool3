@@ -1,0 +1,22 @@
+{
+	"tableViewCell" : "Yes",
+	"collectionViewCell" : "No",
+	"subview" : "No",
+	"submodel" : "No",
+	"isImport" : "Yes",
+
+	"unit" : "HYBlockFive",
+	"bean" : "Goods",
+	
+	"layout" : {
+		"blockFiveView" : "HYBlockFiveView"
+	},
+	
+	"model" : {
+		"text" : "String",
+		"detailText" : "String",
+		"imageUrl" : "String",
+		"models" : "Array",
+		"price" : "Float"
+	}
+}

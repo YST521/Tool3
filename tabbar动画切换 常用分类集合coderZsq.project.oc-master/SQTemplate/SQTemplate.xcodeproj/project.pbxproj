@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14CF2BC41FC7059200BDF14F /* UIViewController+hook.m in Sources */ = {isa = PBXBuildFile; fileRef = 14CF2BC31FC7059200BDF14F /* UIViewController+hook.m */; };
+		CF053AE61EBC68FB002E9EF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF053AE51EBC68FB002E9EF6 /* main.m */; };
+		CF053AE91EBC68FB002E9EF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF053AE81EBC68FB002E9EF6 /* AppDelegate.m */; };
+		CF053AEF1EBC68FB002E9EF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF053AED1EBC68FB002E9EF6 /* Main.storyboard */; };
+		CF053AF11EBC68FB002E9EF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF053AF01EBC68FB002E9EF6 /* Assets.xcassets */; };
+		CF053AF41EBC68FB002E9EF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF053AF21EBC68FB002E9EF6 /* LaunchScreen.storyboard */; };
+		CF053B111EC008A3002E9EF6 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = CF053B101EC008A3002E9EF6 /* NetWork.m */; };
+		CF053B141EC008B0002E9EF6 /* DataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF053B131EC008B0002E9EF6 /* DataBase.m */; };
+		CF053B1A1EC0161E002E9EF6 /* UIImageView+load.m in Sources */ = {isa = PBXBuildFile; fileRef = CF053B191EC0161E002E9EF6 /* UIImageView+load.m */; };
+		CF12ECD31EC01EC200E16BAE /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECD21EC01EC200E16BAE /* Router.m */; };
+		CF12ECD61EC0221000E16BAE /* CurrentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECD51EC0221000E16BAE /* CurrentViewController.m */; };
+		CF12ECE31EC0255100E16BAE /* ControllerTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECD91EC0255100E16BAE /* ControllerTemplate.m */; };
+		CF12ECE41EC0255100E16BAE /* ModelTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECDC1EC0255100E16BAE /* ModelTemplate.m */; };
+		CF12ECE51EC0255100E16BAE /* PresenterTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECDE1EC0255100E16BAE /* PresenterTemplate.m */; };
+		CF12ECE61EC0255100E16BAE /* ViewModelTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECE01EC0255100E16BAE /* ViewModelTemplate.m */; };
+		CF12ECE71EC0255100E16BAE /* ViewTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF12ECE21EC0255100E16BAE /* ViewTemplate.m */; };
+		CF560D791EC43932002E0C48 /* CollectionViewCellTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560D6F1EC43932002E0C48 /* CollectionViewCellTemplate.m */; };
+		CF560D7A1EC43932002E0C48 /* CollectionViewTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560D711EC43932002E0C48 /* CollectionViewTemplate.m */; };
+		CF560D7B1EC43932002E0C48 /* SubmodelTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560D741EC43932002E0C48 /* SubmodelTemplate.m */; };
+		CF560D7C1EC43932002E0C48 /* SubviewTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560D761EC43932002E0C48 /* SubviewTemplate.m */; };
+		CF560D7D1EC43932002E0C48 /* TableViewCellTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560D781EC43932002E0C48 /* TableViewCellTemplate.m */; };
+		CF560E5C1EC56C09002E0C48 /* HYBlockFiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E281EC56C09002E0C48 /* HYBlockFiveCell.m */; };
+		CF560E5D1EC56C09002E0C48 /* HYBlockFiveSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E2B1EC56C09002E0C48 /* HYBlockFiveSubView.m */; };
+		CF560E5E1EC56C09002E0C48 /* HYBlockFiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E2D1EC56C09002E0C48 /* HYBlockFiveView.m */; };
+		CF560E5F1EC56C09002E0C48 /* HYBlockFourCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E2F1EC56C09002E0C48 /* HYBlockFourCell.m */; };
+		CF560E601EC56C09002E0C48 /* HYBlockFourSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E321EC56C09002E0C48 /* HYBlockFourSubView.m */; };
+		CF560E611EC56C09002E0C48 /* HYBlockFourView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E341EC56C09002E0C48 /* HYBlockFourView.m */; };
+		CF560E621EC56C09002E0C48 /* HYBlockOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E361EC56C09002E0C48 /* HYBlockOneCell.m */; };
+		CF560E631EC56C09002E0C48 /* HYBlockOneSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E391EC56C09002E0C48 /* HYBlockOneSubView.m */; };
+		CF560E641EC56C09002E0C48 /* HYBlockOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E3B1EC56C09002E0C48 /* HYBlockOneView.m */; };
+		CF560E651EC56C09002E0C48 /* HYBlockThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E3D1EC56C09002E0C48 /* HYBlockThreeCell.m */; };
+		CF560E661EC56C09002E0C48 /* HYBlockThreeCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E401EC56C09002E0C48 /* HYBlockThreeCollectionCell.m */; };
+		CF560E671EC56C09002E0C48 /* HYBlockThreeCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E431EC56C09002E0C48 /* HYBlockThreeCollectionView.m */; };
+		CF560E681EC56C09002E0C48 /* HYBlockThreeSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E451EC56C09002E0C48 /* HYBlockThreeSubView.m */; };
+		CF560E691EC56C09002E0C48 /* HYBlockThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E471EC56C09002E0C48 /* HYBlockThreeView.m */; };
+		CF560E6A1EC56C09002E0C48 /* HYBlockTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E491EC56C09002E0C48 /* HYBlockTitleView.m */; };
+		CF560E6B1EC56C09002E0C48 /* HYBlockTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E4B1EC56C09002E0C48 /* HYBlockTwoCell.m */; };
+		CF560E6C1EC56C09002E0C48 /* HYBlockTwoSubView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E4E1EC56C09002E0C48 /* HYBlockTwoSubView.m */; };
+		CF560E6D1EC56C09002E0C48 /* HYBlockTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E501EC56C09002E0C48 /* HYBlockTwoView.m */; };
+		CF560E6E1EC56C09002E0C48 /* HYSpecialSaleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E531EC56C09002E0C48 /* HYSpecialSaleModel.m */; };
+		CF560E6F1EC56C09002E0C48 /* HYSpecialSalePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E551EC56C09002E0C48 /* HYSpecialSalePresenter.m */; };
+		CF560E701EC56C09002E0C48 /* HYSpecialSaleView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E571EC56C09002E0C48 /* HYSpecialSaleView.m */; };
+		CF560E711EC56C09002E0C48 /* HYSpecialSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E591EC56C09002E0C48 /* HYSpecialSaleViewController.m */; };
+		CF560E721EC56C09002E0C48 /* HYSpecialSaleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF560E5B1EC56C09002E0C48 /* HYSpecialSaleViewModel.m */; };
+		CFE501B41EC19915006BDE68 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE501B31EC19915006BDE68 /* libc++.tbd */; };
+		E52E16C3C91B5C9FB4C1CCE5 /* libPods-SQTemplate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 592B2C3619CABBFEB1FB83C4 /* libPods-SQTemplate.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14CF2BC21FC7059200BDF14F /* UIViewController+hook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+hook.h"; sourceTree = "<group>"; };
+		14CF2BC31FC7059200BDF14F /* UIViewController+hook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+hook.m"; sourceTree = "<group>"; };
+		51AD9D0245D84F44B950BECC /* Pods-SQTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQTemplate/Pods-SQTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		592B2C3619CABBFEB1FB83C4 /* libPods-SQTemplate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SQTemplate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B2C21C7E3F7442A32E7953D /* Pods-SQTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQTemplate/Pods-SQTemplate.release.xcconfig"; sourceTree = "<group>"; };
+		CF053AE11EBC68FB002E9EF6 /* SQTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SQTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF053AE51EBC68FB002E9EF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF053AE71EBC68FB002E9EF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF053AE81EBC68FB002E9EF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF053AEE1EBC68FB002E9EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF053AF01EBC68FB002E9EF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF053AF31EBC68FB002E9EF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF053AF51EBC68FB002E9EF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF053B0F1EC008A3002E9EF6 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		CF053B101EC008A3002E9EF6 /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
+		CF053B121EC008B0002E9EF6 /* DataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBase.h; sourceTree = "<group>"; };
+		CF053B131EC008B0002E9EF6 /* DataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBase.m; sourceTree = "<group>"; };
+		CF053B181EC0161E002E9EF6 /* UIImageView+load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+load.h"; sourceTree = "<group>"; };
+		CF053B191EC0161E002E9EF6 /* UIImageView+load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+load.m"; sourceTree = "<group>"; };
+		CF12ECD11EC01EC200E16BAE /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		CF12ECD21EC01EC200E16BAE /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		CF12ECD41EC0221000E16BAE /* CurrentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrentViewController.h; sourceTree = "<group>"; };
+		CF12ECD51EC0221000E16BAE /* CurrentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrentViewController.m; sourceTree = "<group>"; };
+		CF12ECD81EC0255100E16BAE /* ControllerTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerTemplate.h; sourceTree = "<group>"; };
+		CF12ECD91EC0255100E16BAE /* ControllerTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerTemplate.m; sourceTree = "<group>"; };
+		CF12ECDA1EC0255100E16BAE /* InterfaceTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterfaceTemplate.h; sourceTree = "<group>"; };
+		CF12ECDB1EC0255100E16BAE /* ModelTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelTemplate.h; sourceTree = "<group>"; };
+		CF12ECDC1EC0255100E16BAE /* ModelTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelTemplate.m; sourceTree = "<group>"; };
+		CF12ECDD1EC0255100E16BAE /* PresenterTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresenterTemplate.h; sourceTree = "<group>"; };
+		CF12ECDE1EC0255100E16BAE /* PresenterTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresenterTemplate.m; sourceTree = "<group>"; };
+		CF12ECDF1EC0255100E16BAE /* ViewModelTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModelTemplate.h; sourceTree = "<group>"; };
+		CF12ECE01EC0255100E16BAE /* ViewModelTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModelTemplate.m; sourceTree = "<group>"; };
+		CF12ECE11EC0255100E16BAE /* ViewTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewTemplate.h; sourceTree = "<group>"; };
+		CF12ECE21EC0255100E16BAE /* ViewTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewTemplate.m; sourceTree = "<group>"; };
+		CF560D6E1EC43932002E0C48 /* CollectionViewCellTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCellTemplate.h; sourceTree = "<group>"; };
+		CF560D6F1EC43932002E0C48 /* CollectionViewCellTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCellTemplate.m; sourceTree = "<group>"; };
+		CF560D701EC43932002E0C48 /* CollectionViewTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewTemplate.h; sourceTree = "<group>"; };
+		CF560D711EC43932002E0C48 /* CollectionViewTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewTemplate.m; sourceTree = "<group>"; };
+		CF560D721EC43932002E0C48 /* SubmodelInterfaceTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmodelInterfaceTemplate.h; sourceTree = "<group>"; };
+		CF560D731EC43932002E0C48 /* SubmodelTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmodelTemplate.h; sourceTree = "<group>"; };
+		CF560D741EC43932002E0C48 /* SubmodelTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmodelTemplate.m; sourceTree = "<group>"; };
+		CF560D751EC43932002E0C48 /* SubviewTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubviewTemplate.h; sourceTree = "<group>"; };
+		CF560D761EC43932002E0C48 /* SubviewTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubviewTemplate.m; sourceTree = "<group>"; };
+		CF560D771EC43932002E0C48 /* TableViewCellTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCellTemplate.h; sourceTree = "<group>"; };
+		CF560D781EC43932002E0C48 /* TableViewCellTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCellTemplate.m; sourceTree = "<group>"; };
+		CF560E271EC56C09002E0C48 /* HYBlockFiveCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFiveCell.h; sourceTree = "<group>"; };
+		CF560E281EC56C09002E0C48 /* HYBlockFiveCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockFiveCell.m; sourceTree = "<group>"; };
+		CF560E291EC56C09002E0C48 /* HYBlockFiveCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFiveCellAdapter.h; sourceTree = "<group>"; };
+		CF560E2A1EC56C09002E0C48 /* HYBlockFiveSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFiveSubView.h; sourceTree = "<group>"; };
+		CF560E2B1EC56C09002E0C48 /* HYBlockFiveSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockFiveSubView.m; sourceTree = "<group>"; };
+		CF560E2C1EC56C09002E0C48 /* HYBlockFiveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFiveView.h; sourceTree = "<group>"; };
+		CF560E2D1EC56C09002E0C48 /* HYBlockFiveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockFiveView.m; sourceTree = "<group>"; };
+		CF560E2E1EC56C09002E0C48 /* HYBlockFourCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFourCell.h; sourceTree = "<group>"; };
+		CF560E2F1EC56C09002E0C48 /* HYBlockFourCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockFourCell.m; sourceTree = "<group>"; };
+		CF560E301EC56C09002E0C48 /* HYBlockFourCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFourCellAdapter.h; sourceTree = "<group>"; };
+		CF560E311EC56C09002E0C48 /* HYBlockFourSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFourSubView.h; sourceTree = "<group>"; };
+		CF560E321EC56C09002E0C48 /* HYBlockFourSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockFourSubView.m; sourceTree = "<group>"; };
+		CF560E331EC56C09002E0C48 /* HYBlockFourView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockFourView.h; sourceTree = "<group>"; };
+		CF560E341EC56C09002E0C48 /* HYBlockFourView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockFourView.m; sourceTree = "<group>"; };
+		CF560E351EC56C09002E0C48 /* HYBlockOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockOneCell.h; sourceTree = "<group>"; };
+		CF560E361EC56C09002E0C48 /* HYBlockOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockOneCell.m; sourceTree = "<group>"; };
+		CF560E371EC56C09002E0C48 /* HYBlockOneCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockOneCellAdapter.h; sourceTree = "<group>"; };
+		CF560E381EC56C09002E0C48 /* HYBlockOneSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockOneSubView.h; sourceTree = "<group>"; };
+		CF560E391EC56C09002E0C48 /* HYBlockOneSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockOneSubView.m; sourceTree = "<group>"; };
+		CF560E3A1EC56C09002E0C48 /* HYBlockOneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockOneView.h; sourceTree = "<group>"; };
+		CF560E3B1EC56C09002E0C48 /* HYBlockOneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockOneView.m; sourceTree = "<group>"; };
+		CF560E3C1EC56C09002E0C48 /* HYBlockThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeCell.h; sourceTree = "<group>"; };
+		CF560E3D1EC56C09002E0C48 /* HYBlockThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockThreeCell.m; sourceTree = "<group>"; };
+		CF560E3E1EC56C09002E0C48 /* HYBlockThreeCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeCellAdapter.h; sourceTree = "<group>"; };
+		CF560E3F1EC56C09002E0C48 /* HYBlockThreeCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeCollectionCell.h; sourceTree = "<group>"; };
+		CF560E401EC56C09002E0C48 /* HYBlockThreeCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockThreeCollectionCell.m; sourceTree = "<group>"; };
+		CF560E411EC56C09002E0C48 /* HYBlockThreeCollectionCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeCollectionCellAdapter.h; sourceTree = "<group>"; };
+		CF560E421EC56C09002E0C48 /* HYBlockThreeCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeCollectionView.h; sourceTree = "<group>"; };
+		CF560E431EC56C09002E0C48 /* HYBlockThreeCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockThreeCollectionView.m; sourceTree = "<group>"; };
+		CF560E441EC56C09002E0C48 /* HYBlockThreeSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeSubView.h; sourceTree = "<group>"; };
+		CF560E451EC56C09002E0C48 /* HYBlockThreeSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockThreeSubView.m; sourceTree = "<group>"; };
+		CF560E461EC56C09002E0C48 /* HYBlockThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockThreeView.h; sourceTree = "<group>"; };
+		CF560E471EC56C09002E0C48 /* HYBlockThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockThreeView.m; sourceTree = "<group>"; };
+		CF560E481EC56C09002E0C48 /* HYBlockTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockTitleView.h; sourceTree = "<group>"; };
+		CF560E491EC56C09002E0C48 /* HYBlockTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockTitleView.m; sourceTree = "<group>"; };
+		CF560E4A1EC56C09002E0C48 /* HYBlockTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockTwoCell.h; sourceTree = "<group>"; };
+		CF560E4B1EC56C09002E0C48 /* HYBlockTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockTwoCell.m; sourceTree = "<group>"; };
+		CF560E4C1EC56C09002E0C48 /* HYBlockTwoCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockTwoCellAdapter.h; sourceTree = "<group>"; };
+		CF560E4D1EC56C09002E0C48 /* HYBlockTwoSubView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockTwoSubView.h; sourceTree = "<group>"; };
+		CF560E4E1EC56C09002E0C48 /* HYBlockTwoSubView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockTwoSubView.m; sourceTree = "<group>"; };
+		CF560E4F1EC56C09002E0C48 /* HYBlockTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBlockTwoView.h; sourceTree = "<group>"; };
+		CF560E501EC56C09002E0C48 /* HYBlockTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBlockTwoView.m; sourceTree = "<group>"; };
+		CF560E511EC56C09002E0C48 /* HYSpecialSaleInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSpecialSaleInterface.h; sourceTree = "<group>"; };
+		CF560E521EC56C09002E0C48 /* HYSpecialSaleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSpecialSaleModel.h; sourceTree = "<group>"; };
+		CF560E531EC56C09002E0C48 /* HYSpecialSaleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSpecialSaleModel.m; sourceTree = "<group>"; };
+		CF560E541EC56C09002E0C48 /* HYSpecialSalePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSpecialSalePresenter.h; sourceTree = "<group>"; };
+		CF560E551EC56C09002E0C48 /* HYSpecialSalePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSpecialSalePresenter.m; sourceTree = "<group>"; };
+		CF560E561EC56C09002E0C48 /* HYSpecialSaleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSpecialSaleView.h; sourceTree = "<group>"; };
+		CF560E571EC56C09002E0C48 /* HYSpecialSaleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSpecialSaleView.m; sourceTree = "<group>"; };
+		CF560E581EC56C09002E0C48 /* HYSpecialSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSpecialSaleViewController.h; sourceTree = "<group>"; };
+		CF560E591EC56C09002E0C48 /* HYSpecialSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSpecialSaleViewController.m; sourceTree = "<group>"; };
+		CF560E5A1EC56C09002E0C48 /* HYSpecialSaleViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSpecialSaleViewModel.h; sourceTree = "<group>"; };
+		CF560E5B1EC56C09002E0C48 /* HYSpecialSaleViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSpecialSaleViewModel.m; sourceTree = "<group>"; };
+		CFE501B31EC19915006BDE68 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF053ADE1EBC68FB002E9EF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFE501B41EC19915006BDE68 /* libc++.tbd in Frameworks */,
+				E52E16C3C91B5C9FB4C1CCE5 /* libPods-SQTemplate.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4E2AF0B06D35994ABD1EF38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51AD9D0245D84F44B950BECC /* Pods-SQTemplate.debug.xcconfig */,
+				6B2C21C7E3F7442A32E7953D /* Pods-SQTemplate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE04A2BCA948589C1E2287BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFE501B31EC19915006BDE68 /* libc++.tbd */,
+				592B2C3619CABBFEB1FB83C4 /* libPods-SQTemplate.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF053AD81EBC68FB002E9EF6 = {
+			isa = PBXGroup;
+			children = (
+				CF053AE31EBC68FB002E9EF6 /* SQTemplate */,
+				CF053AE21EBC68FB002E9EF6 /* Products */,
+				A4E2AF0B06D35994ABD1EF38 /* Pods */,
+				CE04A2BCA948589C1E2287BE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CF053AE21EBC68FB002E9EF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF053AE11EBC68FB002E9EF6 /* SQTemplate.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF053AE31EBC68FB002E9EF6 /* SQTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				CF560E261EC56C09002E0C48 /* HYSpecialSale */,
+				CF560D6D1EC43932002E0C48 /* UITemplate */,
+				CF12ECD71EC0255100E16BAE /* Template */,
+				CF053AE71EBC68FB002E9EF6 /* AppDelegate.h */,
+				CF053AE81EBC68FB002E9EF6 /* AppDelegate.m */,
+				CF053B0F1EC008A3002E9EF6 /* NetWork.h */,
+				CF053B101EC008A3002E9EF6 /* NetWork.m */,
+				CF053B121EC008B0002E9EF6 /* DataBase.h */,
+				CF053B131EC008B0002E9EF6 /* DataBase.m */,
+				CF12ECD11EC01EC200E16BAE /* Router.h */,
+				CF12ECD21EC01EC200E16BAE /* Router.m */,
+				CF053B181EC0161E002E9EF6 /* UIImageView+load.h */,
+				CF053B191EC0161E002E9EF6 /* UIImageView+load.m */,
+				14CF2BC21FC7059200BDF14F /* UIViewController+hook.h */,
+				14CF2BC31FC7059200BDF14F /* UIViewController+hook.m */,
+				CF12ECD41EC0221000E16BAE /* CurrentViewController.h */,
+				CF12ECD51EC0221000E16BAE /* CurrentViewController.m */,
+				CF053AED1EBC68FB002E9EF6 /* Main.storyboard */,
+				CF053AF01EBC68FB002E9EF6 /* Assets.xcassets */,
+				CF053AF21EBC68FB002E9EF6 /* LaunchScreen.storyboard */,
+				CF053AF51EBC68FB002E9EF6 /* Info.plist */,
+				CF053AE41EBC68FB002E9EF6 /* Supporting Files */,
+			);
+			path = SQTemplate;
+			sourceTree = "<group>";
+		};
+		CF053AE41EBC68FB002E9EF6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF053AE51EBC68FB002E9EF6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF12ECD71EC0255100E16BAE /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				CF12ECD81EC0255100E16BAE /* ControllerTemplate.h */,
+				CF12ECD91EC0255100E16BAE /* ControllerTemplate.m */,
+				CF12ECDA1EC0255100E16BAE /* InterfaceTemplate.h */,
+				CF12ECDB1EC0255100E16BAE /* ModelTemplate.h */,
+				CF12ECDC1EC0255100E16BAE /* ModelTemplate.m */,
+				CF12ECDD1EC0255100E16BAE /* PresenterTemplate.h */,
+				CF12ECDE1EC0255100E16BAE /* PresenterTemplate.m */,
+				CF12ECDF1EC0255100E16BAE /* ViewModelTemplate.h */,
+				CF12ECE01EC0255100E16BAE /* ViewModelTemplate.m */,
+				CF12ECE11EC0255100E16BAE /* ViewTemplate.h */,
+				CF12ECE21EC0255100E16BAE /* ViewTemplate.m */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		CF560D6D1EC43932002E0C48 /* UITemplate */ = {
+			isa = PBXGroup;
+			children = (
+				CF560D6E1EC43932002E0C48 /* CollectionViewCellTemplate.h */,
+				CF560D6F1EC43932002E0C48 /* CollectionViewCellTemplate.m */,
+				CF560D701EC43932002E0C48 /* CollectionViewTemplate.h */,
+				CF560D711EC43932002E0C48 /* CollectionViewTemplate.m */,
+				CF560D721EC43932002E0C48 /* SubmodelInterfaceTemplate.h */,
+				CF560D731EC43932002E0C48 /* SubmodelTemplate.h */,
+				CF560D741EC43932002E0C48 /* SubmodelTemplate.m */,
+				CF560D751EC43932002E0C48 /* SubviewTemplate.h */,
+				CF560D761EC43932002E0C48 /* SubviewTemplate.m */,
+				CF560D771EC43932002E0C48 /* TableViewCellTemplate.h */,
+				CF560D781EC43932002E0C48 /* TableViewCellTemplate.m */,
+			);
+			path = UITemplate;
+			sourceTree = "<group>";
+		};
+		CF560E261EC56C09002E0C48 /* HYSpecialSale */ = {
+			isa = PBXGroup;
+			children = (
+				CF560E271EC56C09002E0C48 /* HYBlockFiveCell.h */,
+				CF560E281EC56C09002E0C48 /* HYBlockFiveCell.m */,
+				CF560E291EC56C09002E0C48 /* HYBlockFiveCellAdapter.h */,
+				CF560E2A1EC56C09002E0C48 /* HYBlockFiveSubView.h */,
+				CF560E2B1EC56C09002E0C48 /* HYBlockFiveSubView.m */,
+				CF560E2C1EC56C09002E0C48 /* HYBlockFiveView.h */,
+				CF560E2D1EC56C09002E0C48 /* HYBlockFiveView.m */,
+				CF560E2E1EC56C09002E0C48 /* HYBlockFourCell.h */,
+				CF560E2F1EC56C09002E0C48 /* HYBlockFourCell.m */,
+				CF560E301EC56C09002E0C48 /* HYBlockFourCellAdapter.h */,
+				CF560E311EC56C09002E0C48 /* HYBlockFourSubView.h */,
+				CF560E321EC56C09002E0C48 /* HYBlockFourSubView.m */,
+				CF560E331EC56C09002E0C48 /* HYBlockFourView.h */,
+				CF560E341EC56C09002E0C48 /* HYBlockFourView.m */,
+				CF560E351EC56C09002E0C48 /* HYBlockOneCell.h */,
+				CF560E361EC56C09002E0C48 /* HYBlockOneCell.m */,
+				CF560E371EC56C09002E0C48 /* HYBlockOneCellAdapter.h */,
+				CF560E381EC56C09002E0C48 /* HYBlockOneSubView.h */,
+				CF560E391EC56C09002E0C48 /* HYBlockOneSubView.m */,
+				CF560E3A1EC56C09002E0C48 /* HYBlockOneView.h */,
+				CF560E3B1EC56C09002E0C48 /* HYBlockOneView.m */,
+				CF560E3C1EC56C09002E0C48 /* HYBlockThreeCell.h */,
+				CF560E3D1EC56C09002E0C48 /* HYBlockThreeCell.m */,
+				CF560E3E1EC56C09002E0C48 /* HYBlockThreeCellAdapter.h */,
+				CF560E3F1EC56C09002E0C48 /* HYBlockThreeCollectionCell.h */,
+				CF560E401EC56C09002E0C48 /* HYBlockThreeCollectionCell.m */,
+				CF560E411EC56C09002E0C48 /* HYBlockThreeCollectionCellAdapter.h */,
+				CF560E421EC56C09002E0C48 /* HYBlockThreeCollectionView.h */,
+				CF560E431EC56C09002E0C48 /* HYBlockThreeCollectionView.m */,
+				CF560E441EC56C09002E0C48 /* HYBlockThreeSubView.h */,
+				CF560E451EC56C09002E0C48 /* HYBlockThreeSubView.m */,
+				CF560E461EC56C09002E0C48 /* HYBlockThreeView.h */,
+				CF560E471EC56C09002E0C48 /* HYBlockThreeView.m */,
+				CF560E481EC56C09002E0C48 /* HYBlockTitleView.h */,
+				CF560E491EC56C09002E0C48 /* HYBlockTitleView.m */,
+				CF560E4A1EC56C09002E0C48 /* HYBlockTwoCell.h */,
+				CF560E4B1EC56C09002E0C48 /* HYBlockTwoCell.m */,
+				CF560E4C1EC56C09002E0C48 /* HYBlockTwoCellAdapter.h */,
+				CF560E4D1EC56C09002E0C48 /* HYBlockTwoSubView.h */,
+				CF560E4E1EC56C09002E0C48 /* HYBlockTwoSubView.m */,
+				CF560E4F1EC56C09002E0C48 /* HYBlockTwoView.h */,
+				CF560E501EC56C09002E0C48 /* HYBlockTwoView.m */,
+				CF560E511EC56C09002E0C48 /* HYSpecialSaleInterface.h */,
+				CF560E521EC56C09002E0C48 /* HYSpecialSaleModel.h */,
+				CF560E531EC56C09002E0C48 /* HYSpecialSaleModel.m */,
+				CF560E541EC56C09002E0C48 /* HYSpecialSalePresenter.h */,
+				CF560E551EC56C09002E0C48 /* HYSpecialSalePresenter.m */,
+				CF560E561EC56C09002E0C48 /* HYSpecialSaleView.h */,
+				CF560E571EC56C09002E0C48 /* HYSpecialSaleView.m */,
+				CF560E581EC56C09002E0C48 /* HYSpecialSaleViewController.h */,
+				CF560E591EC56C09002E0C48 /* HYSpecialSaleViewController.m */,
+				CF560E5A1EC56C09002E0C48 /* HYSpecialSaleViewModel.h */,
+				CF560E5B1EC56C09002E0C48 /* HYSpecialSaleViewModel.m */,
+			);
+			path = HYSpecialSale;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF053AE01EBC68FB002E9EF6 /* SQTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF053AF81EBC68FB002E9EF6 /* Build configuration list for PBXNativeTarget "SQTemplate" */;
+			buildPhases = (
+				930CD78F3EC1BA53D88EEECB /* [CP] Check Pods Manifest.lock */,
+				CF053ADD1EBC68FB002E9EF6 /* Sources */,
+				CF053ADE1EBC68FB002E9EF6 /* Frameworks */,
+				CF053ADF1EBC68FB002E9EF6 /* Resources */,
+				6088EB4DEE5F62AB0A20088C /* [CP] Embed Pods Frameworks */,
+				02CD3B7E1248D54614A6D37D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQTemplate;
+			productName = SQTemplate;
+			productReference = CF053AE11EBC68FB002E9EF6 /* SQTemplate.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF053AD91EBC68FB002E9EF6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Doubles_Z;
+				TargetAttributes = {
+					CF053AE01EBC68FB002E9EF6 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CF053ADC1EBC68FB002E9EF6 /* Build configuration list for PBXProject "SQTemplate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF053AD81EBC68FB002E9EF6;
+			productRefGroup = CF053AE21EBC68FB002E9EF6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF053AE01EBC68FB002E9EF6 /* SQTemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF053ADF1EBC68FB002E9EF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF053AF41EBC68FB002E9EF6 /* LaunchScreen.storyboard in Resources */,
+				CF053AF11EBC68FB002E9EF6 /* Assets.xcassets in Resources */,
+				CF053AEF1EBC68FB002E9EF6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02CD3B7E1248D54614A6D37D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQTemplate/Pods-SQTemplate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6088EB4DEE5F62AB0A20088C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SQTemplate/Pods-SQTemplate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		930CD78F3EC1BA53D88EEECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SQTemplate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF053ADD1EBC68FB002E9EF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF560D7C1EC43932002E0C48 /* SubviewTemplate.m in Sources */,
+				CF12ECD61EC0221000E16BAE /* CurrentViewController.m in Sources */,
+				CF053AE91EBC68FB002E9EF6 /* AppDelegate.m in Sources */,
+				CF560E5F1EC56C09002E0C48 /* HYBlockFourCell.m in Sources */,
+				CF560E651EC56C09002E0C48 /* HYBlockThreeCell.m in Sources */,
+				CF560E711EC56C09002E0C48 /* HYSpecialSaleViewController.m in Sources */,
+				CF560E6F1EC56C09002E0C48 /* HYSpecialSalePresenter.m in Sources */,
+				CF12ECE41EC0255100E16BAE /* ModelTemplate.m in Sources */,
+				CF560E6E1EC56C09002E0C48 /* HYSpecialSaleModel.m in Sources */,
+				CF560D7B1EC43932002E0C48 /* SubmodelTemplate.m in Sources */,
+				CF560E721EC56C09002E0C48 /* HYSpecialSaleViewModel.m in Sources */,
+				CF560E611EC56C09002E0C48 /* HYBlockFourView.m in Sources */,
+				CF560E6B1EC56C09002E0C48 /* HYBlockTwoCell.m in Sources */,
+				CF560E621EC56C09002E0C48 /* HYBlockOneCell.m in Sources */,
+				CF560E6C1EC56C09002E0C48 /* HYBlockTwoSubView.m in Sources */,
+				CF560E631EC56C09002E0C48 /* HYBlockOneSubView.m in Sources */,
+				14CF2BC41FC7059200BDF14F /* UIViewController+hook.m in Sources */,
+				CF12ECD31EC01EC200E16BAE /* Router.m in Sources */,
+				CF560E691EC56C09002E0C48 /* HYBlockThreeView.m in Sources */,
+				CF12ECE51EC0255100E16BAE /* PresenterTemplate.m in Sources */,
+				CF053AE61EBC68FB002E9EF6 /* main.m in Sources */,
+				CF560E641EC56C09002E0C48 /* HYBlockOneView.m in Sources */,
+				CF560E681EC56C09002E0C48 /* HYBlockThreeSubView.m in Sources */,
+				CF053B141EC008B0002E9EF6 /* DataBase.m in Sources */,
+				CF12ECE31EC0255100E16BAE /* ControllerTemplate.m in Sources */,
+				CF560E661EC56C09002E0C48 /* HYBlockThreeCollectionCell.m in Sources */,
+				CF560E601EC56C09002E0C48 /* HYBlockFourSubView.m in Sources */,
+				CF053B1A1EC0161E002E9EF6 /* UIImageView+load.m in Sources */,
+				CF560E6D1EC56C09002E0C48 /* HYBlockTwoView.m in Sources */,
+				CF560E671EC56C09002E0C48 /* HYBlockThreeCollectionView.m in Sources */,
+				CF12ECE61EC0255100E16BAE /* ViewModelTemplate.m in Sources */,
+				CF560D7D1EC43932002E0C48 /* TableViewCellTemplate.m in Sources */,
+				CF560E5C1EC56C09002E0C48 /* HYBlockFiveCell.m in Sources */,
+				CF560E701EC56C09002E0C48 /* HYSpecialSaleView.m in Sources */,
+				CF560D7A1EC43932002E0C48 /* CollectionViewTemplate.m in Sources */,
+				CF053B111EC008A3002E9EF6 /* NetWork.m in Sources */,
+				CF560E5E1EC56C09002E0C48 /* HYBlockFiveView.m in Sources */,
+				CF560D791EC43932002E0C48 /* CollectionViewCellTemplate.m in Sources */,
+				CF560E5D1EC56C09002E0C48 /* HYBlockFiveSubView.m in Sources */,
+				CF12ECE71EC0255100E16BAE /* ViewTemplate.m in Sources */,
+				CF560E6A1EC56C09002E0C48 /* HYBlockTitleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF053AED1EBC68FB002E9EF6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF053AEE1EBC68FB002E9EF6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF053AF21EBC68FB002E9EF6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF053AF31EBC68FB002E9EF6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF053AF61EBC68FB002E9EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF053AF71EBC68FB002E9EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF053AF91EBC68FB002E9EF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51AD9D0245D84F44B950BECC /* Pods-SQTemplate.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SQTemplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coderZsq.SQTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF053AFA1EBC68FB002E9EF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B2C21C7E3F7442A32E7953D /* Pods-SQTemplate.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SQTemplate/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = coderZsq.SQTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF053ADC1EBC68FB002E9EF6 /* Build configuration list for PBXProject "SQTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF053AF61EBC68FB002E9EF6 /* Debug */,
+				CF053AF71EBC68FB002E9EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF053AF81EBC68FB002E9EF6 /* Build configuration list for PBXNativeTarget "SQTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF053AF91EBC68FB002E9EF6 /* Debug */,
+				CF053AFA1EBC68FB002E9EF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF053AD91EBC68FB002E9EF6 /* Project object */;
+}
