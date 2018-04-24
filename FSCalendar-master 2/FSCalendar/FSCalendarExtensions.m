@@ -23,12 +23,18 @@
 
 - (CGFloat)fs_height
 {
+    
     return CGRectGetHeight(self.frame);
+    
 }
 
 - (void)setFs_height:(CGFloat)fs_height
 {
-    self.frame = CGRectMake(self.fs_left, self.fs_top, self.fs_width, fs_height);
+    if (fs_height >0) {
+        
+        
+        self.frame = CGRectMake(self.fs_left, self.fs_top, self.fs_width, fs_height);
+    }
 }
 
 - (CGFloat)fs_top
@@ -38,7 +44,11 @@
 
 - (void)setFs_top:(CGFloat)fs_top
 {
-    self.frame = CGRectMake(self.fs_left, fs_top, self.fs_width, self.fs_height);
+    if (fs_top >0) {
+        
+        
+        self.frame = CGRectMake(self.fs_left, fs_top, self.fs_width, self.fs_height);
+    }
 }
 
 - (CGFloat)fs_bottom
@@ -48,7 +58,10 @@
 
 - (void)setFs_bottom:(CGFloat)fs_bottom
 {
-    self.fs_top = fs_bottom - self.fs_height;
+    if (fs_bottom >0) {
+        self.fs_top = fs_bottom - self.fs_height;
+    }
+    
 }
 
 - (CGFloat)fs_left
@@ -206,8 +219,8 @@
 {
     if (!month) return 0;
     NSRange days = [self rangeOfUnit:NSCalendarUnitDay
-                                        inUnit:NSCalendarUnitMonth
-                                       forDate:month];
+                              inUnit:NSCalendarUnitMonth
+                             forDate:month];
     return days.length;
 }
 
@@ -268,16 +281,16 @@
 #define IVAR_IMP(SET,GET,TYPE) \
 - (void)fs_set##SET##Variable:(TYPE)value forKey:(NSString *)key \
 { \
-    Ivar ivar = class_getInstanceVariable([self class], key.UTF8String); \
-    ((void (*)(id, Ivar, TYPE))object_setIvar)(self, ivar, value); \
+Ivar ivar = class_getInstanceVariable([self class], key.UTF8String); \
+((void (*)(id, Ivar, TYPE))object_setIvar)(self, ivar, value); \
 } \
 - (TYPE)fs_##GET##VariableForKey:(NSString *)key \
 { \
-    Ivar ivar = class_getInstanceVariable([self class], key.UTF8String); \
-    ptrdiff_t offset = ivar_getOffset(ivar); \
-    unsigned char *bytes = (unsigned char *)(__bridge void *)self; \
-    TYPE value = *((TYPE *)(bytes+offset)); \
-    return value; \
+Ivar ivar = class_getInstanceVariable([self class], key.UTF8String); \
+ptrdiff_t offset = ivar_getOffset(ivar); \
+unsigned char *bytes = (unsigned char *)(__bridge void *)self; \
+TYPE value = *((TYPE *)(bytes+offset)); \
+return value; \
 }
 IVAR_IMP(Bool,bool,BOOL)
 IVAR_IMP(Float,float,CGFloat)
@@ -326,8 +339,8 @@ IVAR_IMP(UnsignedInteger,unsignedInteger,NSUInteger)
                         // struct
 #define PARAM_STRUCT_TYPES(_type,_getter,_default) \
 if (!strcmp(argType, @encode(_type))) { \
-    _type value = [obj respondsToSelector:@selector(_getter)]?[obj _getter]:_default; \
-    [invocation setArgument:&value atIndex:index]; \
+_type value = [obj respondsToSelector:@selector(_getter)]?[obj _getter]:_default; \
+[invocation setArgument:&value atIndex:index]; \
 }
                         PARAM_STRUCT_TYPES(CGPoint, CGPointValue, CGPointZero)
                         PARAM_STRUCT_TYPES(CGSize, CGSizeValue, CGSizeZero)
@@ -345,8 +358,8 @@ if (!strcmp(argType, @encode(_type))) { \
                         // basic type
 #define PARAM_BASIC_TYPES(_type,_getter) \
 if (!strcmp(argType, @encode(_type))) { \
-    _type value = [obj respondsToSelector:@selector(_getter)]?[obj _getter]:0; \
-    [invocation setArgument:&value atIndex:index]; \
+_type value = [obj respondsToSelector:@selector(_getter)]?[obj _getter]:0; \
+[invocation setArgument:&value atIndex:index]; \
 }
                         PARAM_BASIC_TYPES(BOOL, boolValue)
                         PARAM_BASIC_TYPES(int, intValue)
@@ -393,9 +406,9 @@ if (!strcmp(argType, @encode(_type))) { \
             // struct
 #define RETURN_STRUCT_TYPES(_type) \
 if (!strcmp(returnType, @encode(_type))) { \
-    _type value; \
-    [invocation getReturnValue:&value]; \
-    returnValue = [NSValue value:&value withObjCType:@encode(_type)]; \
+_type value; \
+[invocation getReturnValue:&value]; \
+returnValue = [NSValue value:&value withObjCType:@encode(_type)]; \
 }
             RETURN_STRUCT_TYPES(CGPoint)
             RETURN_STRUCT_TYPES(CGSize)
@@ -413,8 +426,8 @@ if (!strcmp(returnType, @encode(_type))) { \
             void *buffer = (void *)malloc(length);
             [invocation getReturnValue:buffer];
 #define RETURN_BASIC_TYPES(_type) \
-    if (!strcmp(returnType, @encode(_type))) { \
-    returnValue = @(*((_type*)buffer)); \
+if (!strcmp(returnType, @encode(_type))) { \
+returnValue = @(*((_type*)buffer)); \
 }
             RETURN_BASIC_TYPES(BOOL)
             RETURN_BASIC_TYPES(int)

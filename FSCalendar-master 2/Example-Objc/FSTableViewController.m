@@ -14,6 +14,7 @@
 #import "ButtonsViewController.h"
 #import "DIYExampleViewController.h"
 #import "RangePickerViewController.h"
+#import "PushController.h"
 
 @implementation FSTableViewController
 
@@ -36,6 +37,15 @@
                             ];
     
     self.tableView.rowHeight = [[UIDevice currentDevice].model hasSuffix:@"iPad"] ? 60.0 : 44.0;
+    
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc]initWithTitle:@"push" style:(UIBarButtonItemStylePlain) target:self action:@selector(PUSH)];
+    
+}
+-(void)PUSH{
+    
+    PushController *pushVC = [[PushController alloc]init];
+    [self.navigationController pushViewController:pushVC animated:YES];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
